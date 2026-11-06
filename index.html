@@ -103,9 +103,9 @@
     </section>
 
     <section class="view" id="view-placement">
-      <div class="page-intro"><div><span class="pill">BƯỚC ĐẦU TIÊN · 24 CÂU SÀNG LỌC</span><h1>Khám phá năng lực tiếng Trung 🧭</h1><p>Bài đánh giá phân tầng gồm 40 câu, cân bằng 6 câu mỗi cấp HSK1–HSK4. Kết quả chỉ khởi tạo hồ sơ học tập; hệ thống tiếp tục cập nhật qua bài luyện. Đây không phải đề thi cấp chứng chỉ.</p></div><span style="font-size:48px">🗺️</span></div>
+      <div class="page-intro"><div><span class="pill">BƯỚC ĐẦU TIÊN · 40 CÂU SÀNG LỌC</span><h1>Khám phá năng lực tiếng Trung 🧭</h1><p>Bài đánh giá phân tầng gồm 40 câu, 10 câu mỗi cấp HSK1–HSK4 và 2 câu cho mỗi nhóm kỹ năng ở từng cấp. Kết quả chỉ khởi tạo hồ sơ học tập; hệ thống tiếp tục cập nhật qua bài luyện. Đây không phải đề thi cấp chứng chỉ.</p></div><span style="font-size:48px">🗺️</span></div>
       <div class="notice" style="margin-bottom:15px"><span class="notice-icon">💡</span><div><strong>Cách làm bài</strong><p>Chọn một đáp án phù hợp nhất. Với câu nghe, nhấn nút phát âm thanh trước khi trả lời. Kết quả sẽ phân tích theo nhóm kỹ năng.</p></div></div>
-      <div id="placementStart" class="card panel quiz-shell"><div style="display:grid;grid-template-columns:1fr 130px;gap:15px;align-items:center"><div><h3 style="font-size:19px">Bài kiểm tra đầu vào HSK3 → HSK4</h3><p class="panel-desc">Từ vựng · Ngữ pháp · Đọc hiểu · Nghe hiểu · Sắp xếp câu</p><div class="tiny muted">40 câu · khoảng 15–20 phút · 6 câu mỗi cấp độ · có giải thích sau khi nộp</div></div><div style="font-size:80px;text-align:center">🌼</div></div><button class="btn btn-primary" style="margin-top:14px" id="startPlacement">Bắt đầu làm bài →</button></div>
+      <div id="placementStart" class="card panel quiz-shell"><div style="display:grid;grid-template-columns:1fr 130px;gap:15px;align-items:center"><div><h3 style="font-size:19px">Bài kiểm tra đầu vào HSK3 → HSK4</h3><p class="panel-desc">Từ vựng · Ngữ pháp · Đọc hiểu · Nghe hiểu · Sắp xếp câu</p><div class="tiny muted">40 câu · khoảng 20–30 phút · 10 câu mỗi cấp độ · xem đáp án và giải thích sau khi nộp</div></div><div style="font-size:80px;text-align:center">🌼</div></div><button class="btn btn-primary" style="margin-top:14px" id="startPlacement">Bắt đầu làm bài →</button></div>
       <div id="placementQuiz" class="quiz-shell hidden"></div><div id="placementResult" class="quiz-shell hidden"></div>
     </section>
 
@@ -168,7 +168,7 @@
 
     <section class="view" id="view-profile">
       <div class="page-intro"><div><span class="pill">MY LEARNING DATA</span><h1>Hồ sơ & dữ liệu 🎒</h1><p>Quản lý mục tiêu, sao lưu tiến trình và chuyển dữ liệu sang máy tính khác.</p></div><div style="font-size:44px">☁️</div></div>
-      <div class="grid-2"><div class="card panel"><h3>Hồ sơ học tập</h3><div class="setting-row"><label>Tên hiển thị</label><input id="profileName" class="select" style="width:100%" placeholder="Tên của bạn"/></div><div class="setting-row"><label>Mục tiêu</label><select id="profileGoal" class="select" style="width:100%"><option value="HSK4">Đạt năng lực HSK4</option><option value="conversation">Giao tiếp tự tin</option><option value="foundation">Củng cố nền tảng HSK1–3</option></select></div><button class="btn btn-primary" id="saveProfile">Lưu hồ sơ</button></div><div class="card panel"><h3>Sao lưu & chuyển máy</h3><p class="panel-desc">Dữ liệu trong bản HTML hiện lưu cục bộ. Để chuyển máy, xuất JSON ở máy cũ rồi nhập ở máy mới.</p><button class="btn btn-soft btn-block" id="exportData">⬇ Xuất toàn bộ dữ liệu JSON</button><label class="btn btn-outline btn-block" style="margin-top:9px;cursor:pointer">⬆ Nhập dữ liệu JSON<input type="file" id="importData" accept="application/json,.json" hidden/></label><div class="notice" style="margin-top:14px"><span class="notice-icon">🔒</span><div><strong>Quyền riêng tư</strong><p>Bản này không gửi tiến trình học lên máy chủ. Chưa có đăng nhập hoặc đồng bộ tự động giữa nhiều thiết bị.</p></div></div></div></div>
+      <div class="grid-2"><div class="card panel"><h3>Hồ sơ học tập</h3><div class="setting-row"><label>Tên hiển thị</label><input id="profileName" class="select" style="width:100%" placeholder="Tên của bạn"/></div><div class="setting-row"><label>Mục tiêu</label><select id="profileGoal" class="select" style="width:100%"><option value="HSK4">Đạt năng lực HSK4</option><option value="conversation">Giao tiếp tự tin</option><option value="foundation">Củng cố nền tảng HSK1–3</option></select></div><button class="btn btn-primary" id="saveProfile">Lưu hồ sơ</button></div><div class="card panel"><h3>Sao lưu & chuyển máy</h3><p class="panel-desc">Tiến trình tự động lưu trên thiết bị/trình duyệt hiện tại. Để chuyển máy, xuất JSON ở máy cũ rồi nhập ở máy mới; đồng bộ cloud cần thêm tài khoản và máy chủ.</p><button class="btn btn-soft btn-block" id="exportData">⬇ Xuất toàn bộ dữ liệu JSON</button><label class="btn btn-outline btn-block" style="margin-top:9px;cursor:pointer">⬆ Nhập dữ liệu JSON<input type="file" id="importData" accept="application/json,.json" hidden/></label><div class="notice" style="margin-top:14px"><span class="notice-icon">🔒</span><div><strong>Quyền riêng tư</strong><p>Bản này tự lưu cục bộ và có bản sao dự phòng trên cùng thiết bị. Chưa có đăng nhập hoặc đồng bộ cloud giữa nhiều thiết bị.</p></div></div></div></div>
       <div class="section-head"><div><h2>Nguồn học liệu & chuẩn tham chiếu</h2><p>Đối chiếu cấu trúc khóa học và thông tin bài thi tại các nguồn tham khảo.</p></div></div><div class="history-list"><div class="history-item"><div><strong>HSK Standard Course · Syllabus & Textbook map</strong><div class="tiny muted">Khung quyển HSK1, HSK2, HSK3, HSK4A và HSK4B; chưa ánh xạ toàn bộ từng từ vào số bài.</div></div><a href="https://www.mandarin.ac.cn/textbook/" target="_blank" rel="noopener">Mở nguồn ↗</a></div><div class="history-item"><div><strong>Chinese Test Service · HSK exam information</strong><div class="tiny muted">Cấu trúc bài thi, số câu, thời lượng và điểm đạt HSK4.</div></div><a href="https://www.chinesetest.cn/HSK/4?lang=en" target="_blank" rel="noopener">Mở CTI ↗</a></div><div class="history-item"><div><strong>Chinese Test Service · HSK 2.0 Vocabulary List (2015)</strong><div class="tiny muted">Danh mục Excel chính thức để đối chiếu HSK 2.0; không phải bản đồ bài học Standard Course.</div></div><a href="https://admin.chinesetest.cn/userfiles/file/HSK/HSK-2015.xlsx" target="_blank" rel="noopener">Tải danh mục ↗</a></div><div class="history-item"><div><strong>HSK 2.0 Level 4 · vocabulary reference</strong><div class="tiny muted">Danh mục tham chiếu từ mới HSK4; cần đối chiếu tiếp với từng bài HSK Standard Course 4A/4B.</div></div><a href="https://hskuniversity.com/hsk-4/vocabulary/" target="_blank" rel="noopener">Mở danh mục ↗</a></div><div class="history-item"><div><strong>HSK 2.0 · Grammar reference</strong><div class="tiny muted">Danh sách cấu trúc tham khảo; cách nhóm bài có thể khác giữa các tài liệu.</div></div><a href="https://haohsk.com/vi/learn/grammar/hsk4" target="_blank" rel="noopener">Mở danh mục ↗</a></div><div class="history-item"><div><strong>Kangxi Radical Library · 214 radicals</strong><div class="tiny muted">Thứ tự bộ thủ, Pinyin và số nét; phần diễn giải tiếng Việt được biên soạn ngắn gọn.</div></div><a href="https://www.hsk.guide/radicals" target="_blank" rel="noopener">Mở thư viện ↗</a></div></div><div class="section-head"><div><h2>Giới hạn phiên bản hiện tại</h2><p>Minh bạch về những gì đang hoạt động và những gì cần backend.</p></div></div><div class="history-list"><div class="history-item"><div><strong>Đang hoạt động</strong><div class="tiny muted">Điều hướng, kho từ/ngữ pháp mở rộng, quiz đa kỹ năng, hồ sơ năng lực, SRS có lịch đến hạn, sổ lỗi sai, lưu cục bộ, xuất/nhập JSON, TTS trình duyệt, thư viện 214 bộ thủ.</div></div><span class="pill green">Có</span></div><div class="history-item"><div><strong>Cần tích hợp tiếp</strong><div class="tiny muted">AI hội thoại tự do, đánh giá phát âm chuyên sâu, đồng bộ cloud, toàn bộ từ vựng/ngữ pháp từng bài theo sách.</div></div><span class="pill">Giai đoạn sau</span></div></div>
     </section>
     <div class="footer-note">YUE YUE · Chinese Learning Garden · Bản HTML độc lập · HSK Standard Course 1–4 (HSK 2.0) · Nội dung mẫu để kiểm thử trải nghiệm</div>
@@ -1309,6 +1309,867 @@ function renderAllAdaptive(){updateAdaptiveHeader();renderHome();renderVocab();r
 renderAllAdaptive();
 
 renderAll();
+</script>
+<script id="yy-mic-diagnostics-v1">
+(() => {
+  const button = document.getElementById('micButton');
+  const input = document.getElementById('chatInput');
+  const hint = document.getElementById('speechHint');
+  if (!button || !input || !hint) return;
+
+  let recognition = null;
+  let listening = false;
+  const NativeRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  const setHint = (message, type = 'info') => {
+    hint.textContent = message;
+    hint.dataset.state = type;
+    hint.style.color = type === 'error' ? '#a9433d' : type === 'success' ? '#35784f' : '';
+  };
+
+  const fallbackText = 'Phương án dự phòng: chạm vào ô nhập câu trả lời, mở bàn phím điện thoại và nhấn biểu tượng micro trên bàn phím. Chọn nhập liệu tiếng Trung / 中文 rồi đọc câu của bạn. Cách này dùng nhận diện giọng nói của bàn phím, không phụ thuộc SpeechRecognition của website.';
+
+  const errorHelp = (code) => {
+    const messages = {
+      'not-allowed': 'Trình duyệt đang chặn quyền micro hoặc quyền nhận diện giọng nói. Hãy mở Cài đặt trang web → Microphone → Cho phép; đồng thời kiểm tra quyền micro của Chrome/Safari trong Cài đặt điện thoại.',
+      'service-not-allowed': 'Dịch vụ nhận diện giọng nói của trình duyệt không được phép hoặc không khả dụng trên thiết bị này. Thử Chrome bản mới trên Android hoặc dùng micro tích hợp trên bàn phím điện thoại.',
+      'network': 'Trình duyệt không kết nối được dịch vụ nhận diện giọng nói. Kiểm tra Internet, tắt VPN / DNS lọc nếu có, rồi thử lại. Một số trình duyệt cần dịch vụ nhận diện trực tuyến.',
+      'no-speech': 'Không phát hiện được lời nói. Hãy đợi thông báo “Đang nghe”, đưa điện thoại gần miệng hơn và nói rõ một câu tiếng Trung.',
+      'audio-capture': 'Không lấy được âm thanh từ micro. Kiểm tra micro có bị ứng dụng khác chiếm dụng, quyền micro của trình duyệt và thử lại.',
+      'language-not-supported': 'Trình duyệt hoặc dịch vụ nhận diện không hỗ trợ mã ngôn ngữ zh-CN trên thiết bị này. Thử cập nhật trình duyệt hoặc dùng micro trên bàn phím với ngôn ngữ 中文.',
+      'aborted': 'Lượt nhận diện đã bị dừng. Nhấn micro và nói lại sau khi trạng thái chuyển sang “Đang nghe”.'
+    };
+    return messages[code] || `Nhận diện giọng nói gặp lỗi (${code || 'unknown'}). ${fallbackText}`;
+  };
+
+  button.onclick = () => {
+    if (listening && recognition) {
+      try { recognition.stop(); } catch (_) {}
+      setHint('Đã yêu cầu dừng nhận diện.', 'info');
+      return;
+    }
+
+    if (!window.isSecureContext) {
+      setHint('Trang hiện không chạy trong ngữ cảnh an toàn. Hãy mở website qua HTTPS (ví dụ GitHub Pages có https://), không mở bản HTML trực tiếp từ thư mục tải xuống. ' + fallbackText, 'error');
+      return;
+    }
+
+    if (!NativeRecognition) {
+      setHint('Trình duyệt này không cung cấp SpeechRecognition cho website. Đây là giới hạn tương thích, không có nghĩa micro điện thoại bị hỏng. ' + fallbackText, 'error');
+      return;
+    }
+
+    if (!navigator.onLine) {
+      setHint('Thiết bị đang ngoại tuyến. Nhận diện của trình duyệt có thể cần Internet. ' + fallbackText, 'error');
+      return;
+    }
+
+    try {
+      const rec = new NativeRecognition();
+      recognition = rec;
+      rec.lang = 'zh-CN';
+      rec.continuous = false;
+      rec.interimResults = true;
+      rec.maxAlternatives = 3;
+
+      rec.onstart = () => {
+        listening = true;
+        button.classList.add('recording');
+        button.setAttribute('aria-label', 'Dừng nhận diện giọng nói');
+        setHint('Đang nghe tiếng Trung… hãy nói một câu ngắn, rõ ràng. Khi hoàn tất, kết quả sẽ xuất hiện trong ô nhập.', 'success');
+      };
+
+      rec.onresult = (event) => {
+        let finalText = '';
+        let interimText = '';
+        for (let i = 0; i < event.results.length; i++) {
+          const result = event.results[i];
+          const text = result && result[0] ? result[0].transcript : '';
+          if (result.isFinal) finalText += text;
+          else interimText += text;
+        }
+        const output = (finalText || interimText).trim();
+        if (output) input.value = output;
+        if (finalText.trim()) setHint('Đã nhận diện: ' + finalText.trim() + ' — bạn hãy kiểm tra câu rồi nhấn Gửi.', 'success');
+        else if (interimText.trim()) setHint('Đang nhận diện: ' + interimText.trim(), 'info');
+      };
+
+      rec.onerror = (event) => {
+        listening = false;
+        button.classList.remove('recording');
+        button.setAttribute('aria-label', 'Nhận diện giọng nói');
+        const code = event && event.error ? event.error : 'unknown';
+        setHint(errorHelp(code), 'error');
+      };
+
+      rec.onnomatch = () => setHint('Có âm thanh nhưng chưa nhận diện được câu nói. Hãy nói chậm hơn, rõ thanh điệu hơn hoặc thử câu ngắn.', 'error');
+      rec.onend = () => {
+        listening = false;
+        button.classList.remove('recording');
+        button.setAttribute('aria-label', 'Nhận diện giọng nói');
+        if (!hint.textContent.includes('Đã nhận diện:') && hint.dataset.state !== 'error') {
+          setHint('Đã kết thúc lượt nghe. Nếu chưa có chữ hiện ra, hãy thử lại hoặc dùng micro trên bàn phím điện thoại.', 'info');
+        }
+        recognition = null;
+      };
+
+      setHint('Đang khởi tạo nhận diện zh-CN… nếu trình duyệt hỏi quyền micro, hãy chọn Cho phép.', 'info');
+      rec.start();
+    } catch (error) {
+      listening = false;
+      button.classList.remove('recording');
+      const code = error && error.name === 'NotAllowedError' ? 'not-allowed' : error && error.name === 'InvalidStateError' ? 'aborted' : 'unknown';
+      setHint(errorHelp(code), 'error');
+    }
+  };
+
+  // Give learners an immediate, honest capability hint before first use.
+  if (!window.isSecureContext) {
+    setHint('Micro website cần được mở từ HTTPS. Nếu đang mở file HTML trực tiếp, hãy mở URL GitHub Pages bắt đầu bằng https://. ' + fallbackText, 'error');
+  } else if (!NativeRecognition) {
+    setHint('Trình duyệt hiện tại không hỗ trợ nhận diện giọng nói trực tiếp trên website. ' + fallbackText, 'info');
+  } else {
+    setHint('Nhận diện giọng nói: trình duyệt có API SpeechRecognition. Chọn micro để bắt đầu; nếu thất bại, website sẽ hiển thị nguyên nhân cụ thể. ' + fallbackText, 'info');
+  }
+})();
+</script>
+<script id="yy-learning-feedback-autosave-v2">
+/* YUE YUE · Learner feedback, adaptive roadmap and resilient autosave */
+(() => {
+  'use strict';
+
+  const YY3_BACKUP_KEY = `${STORAGE_KEY}__backup_v2`;
+  const YY3_DB_NAME = 'YueYueLearningBackup';
+  const YY3_DB_STORE = 'snapshots';
+  let YY3_dbPromise = null;
+  let YY3_writeQueue = Promise.resolve();
+  let YY3_saveTimer = null;
+  let YY3_restoring = false;
+
+  const YY3_esc = (value) => typeof escapeHtml === 'function'
+    ? escapeHtml(String(value ?? ''))
+    : String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const YY3_date = (value) => {
+    if (!value) return 'Chưa có dữ liệu';
+    const d = new Date(value);
+    return Number.isNaN(d.getTime()) ? 'Chưa có dữ liệu' : d.toLocaleString('vi-VN');
+  };
+  const YY3_kindLabel = (kind, skill) => skill || ({vocab:'Từ vựng',grammar:'Ngữ pháp',listening:'Nghe hiểu',reading:'Đọc hiểu',sentence:'Sắp xếp câu',writing:'Viết'}[kind] || 'Tổng hợp');
+
+  function YY3_normalizeState() {
+    state.quizHistory = Array.isArray(state.quizHistory) ? state.quizHistory : [];
+    state.placementHistory = Array.isArray(state.placementHistory) ? state.placementHistory : [];
+    state.lessonHistory = Array.isArray(state.lessonHistory) ? state.lessonHistory : [];
+    state.errorNotebook = Array.isArray(state.errorNotebook) ? state.errorNotebook : [];
+    state.speakingSessions = Array.isArray(state.speakingSessions) ? state.speakingSessions : [];
+    state.writingAttempts = Array.isArray(state.writingAttempts) ? state.writingAttempts : [];
+    state.grammarNotes = state.grammarNotes && typeof state.grammarNotes === 'object' ? state.grammarNotes : {};
+    state.wordMastery = state.wordMastery && typeof state.wordMastery === 'object' ? state.wordMastery : {};
+    state.grammarMastery = state.grammarMastery && typeof state.grammarMastery === 'object' ? state.grammarMastery : {};
+    state.skillEvidence = state.skillEvidence && typeof state.skillEvidence === 'object' ? state.skillEvidence : {};
+    state.levelEvidence = state.levelEvidence && typeof state.levelEvidence === 'object' ? state.levelEvidence : {};
+    state.dailyProof = state.dailyProof && typeof state.dailyProof === 'object' ? state.dailyProof : {};
+    state.completedTasks = state.completedTasks && typeof state.completedTasks === 'object' ? state.completedTasks : {};
+    state.selfEvidence = state.selfEvidence && typeof state.selfEvidence === 'object' ? state.selfEvidence : {};
+    state.minutes = Math.max(15, Math.min(90, Number(state.minutes) || 30));
+    state.schemaVersion = Math.max(4, Number(state.schemaVersion) || 0);
+  }
+
+  function YY3_setSaveStatus(message, tone = 'success') {
+    const el = document.getElementById('yyAutoSaveStatus');
+    if (!el) return;
+    const color = tone === 'error' ? '#A84E46' : tone === 'warning' ? '#946A26' : '#477B54';
+    el.innerHTML = `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:7px"></span><strong>${YY3_esc(message)}</strong><div class="tiny muted" style="margin-top:4px">${state.lastSavedAt ? `Lần lưu gần nhất: ${YY3_esc(YY3_date(state.lastSavedAt))}` : 'Chưa có bản lưu'}</div>`;
+  }
+
+  function YY3_openDb() {
+    if (!('indexedDB' in window)) return Promise.reject(new Error('IndexedDB không được hỗ trợ'));
+    if (YY3_dbPromise) return YY3_dbPromise;
+    YY3_dbPromise = new Promise((resolve, reject) => {
+      const request = indexedDB.open(YY3_DB_NAME, 1);
+      request.onupgradeneeded = () => {
+        const db = request.result;
+        if (!db.objectStoreNames.contains(YY3_DB_STORE)) db.createObjectStore(YY3_DB_STORE, { keyPath: 'key' });
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error || new Error('Không mở được kho sao lưu'));
+      request.onblocked = () => reject(new Error('Kho sao lưu đang bị khóa bởi tab khác'));
+    });
+    return YY3_dbPromise;
+  }
+
+  function YY3_writeIndexedDb(snapshot) {
+    YY3_writeQueue = YY3_writeQueue.then(async () => {
+      const db = await YY3_openDb();
+      await new Promise((resolve, reject) => {
+        const tx = db.transaction(YY3_DB_STORE, 'readwrite');
+        tx.objectStore(YY3_DB_STORE).put({ key: STORAGE_KEY, payload: snapshot, savedAt: state.lastSavedAt || new Date().toISOString() });
+        tx.oncomplete = resolve;
+        tx.onerror = () => reject(tx.error || new Error('Không ghi được bản sao IndexedDB'));
+        tx.onabort = () => reject(tx.error || new Error('Sao lưu bị hủy'));
+      });
+    }).catch(err => {
+      console.warn('Yue Yue IndexedDB backup:', err);
+      YY3_setSaveStatus('Đã lưu bản chính; bản sao IndexedDB chưa sẵn sàng.', 'warning');
+    });
+    return YY3_writeQueue;
+  }
+
+  function YY3_readIndexedDb() {
+    return YY3_openDb().then(db => new Promise((resolve, reject) => {
+      const tx = db.transaction(YY3_DB_STORE, 'readonly');
+      const req = tx.objectStore(YY3_DB_STORE).get(STORAGE_KEY);
+      req.onsuccess = () => resolve(req.result || null);
+      req.onerror = () => reject(req.error || new Error('Không đọc được bản sao IndexedDB'));
+    }));
+  }
+
+  // Synchronous primary save + a second localStorage copy; IndexedDB runs in the background.
+  saveState = function YY3_saveState() {
+    YY3_normalizeState();
+    state.lastSavedAt = new Date().toISOString();
+    state.schemaVersion = 4;
+    let primaryOk = false;
+    let backupOk = false;
+    let snapshot = '';
+    try {
+      snapshot = JSON.stringify(state);
+      localStorage.setItem(STORAGE_KEY, snapshot);
+      primaryOk = true;
+    } catch (err) {
+      console.warn('Yue Yue localStorage primary save:', err);
+    }
+    try {
+      if (!snapshot) snapshot = JSON.stringify(state);
+      localStorage.setItem(YY3_BACKUP_KEY, snapshot);
+      backupOk = true;
+    } catch (err) {
+      console.warn('Yue Yue localStorage backup:', err);
+    }
+    if (snapshot) YY3_writeIndexedDb(snapshot);
+    try { updateHeaderStats(); } catch (_) {}
+    YY3_setSaveStatus(
+      primaryOk ? (backupOk ? 'Tự động lưu đang bật trên thiết bị này.' : 'Đã lưu bản chính; bản sao phụ chưa ghi được.') : 'Không ghi được bộ nhớ trình duyệt. Hãy xuất JSON để giữ dữ liệu.',
+      primaryOk ? (backupOk ? 'success' : 'warning') : 'error'
+    );
+    YY3_renderLearningHistory();
+  };
+
+  function YY3_parseSnapshot(raw) {
+    if (!raw) return null;
+    try {
+      const parsed = JSON.parse(raw);
+      const incoming = parsed && parsed.state && typeof parsed.state === 'object' ? parsed.state : parsed;
+      if (!incoming || typeof incoming !== 'object' || Array.isArray(incoming)) return null;
+      return incoming;
+    } catch (_) { return null; }
+  }
+
+  async function YY3_restoreBestSnapshot() {
+    if (YY3_restoring) return;
+    YY3_restoring = true;
+    try {
+      const candidates = [];
+      try {
+        const primary = YY3_parseSnapshot(localStorage.getItem(STORAGE_KEY));
+        if (primary) candidates.push({ data: primary, savedAt: Date.parse(primary.lastSavedAt || '') || 0, source: 'bản lưu chính' });
+      } catch (_) {}
+      try {
+        const backup = YY3_parseSnapshot(localStorage.getItem(YY3_BACKUP_KEY));
+        if (backup) candidates.push({ data: backup, savedAt: Date.parse(backup.lastSavedAt || '') || 0, source: 'bản sao cục bộ' });
+      } catch (_) {}
+      try {
+        const db = await YY3_readIndexedDb();
+        const dbData = YY3_parseSnapshot(db?.payload);
+        if (dbData) candidates.push({ data: dbData, savedAt: Date.parse(db.savedAt || dbData.lastSavedAt || '') || 0, source: 'IndexedDB' });
+      } catch (_) { /* localStorage remains the fallback */ }
+
+      const best = candidates.sort((a,b) => b.savedAt - a.savedAt)[0];
+      const currentSavedAt = Date.parse(state.lastSavedAt || '') || 0;
+      if (best && best.savedAt > currentSavedAt + 500) {
+        Object.assign(state, best.data);
+        YY3_normalizeState();
+        try {
+          if (typeof renderAllAdaptive === 'function') renderAllAdaptive();
+          else { renderHome(); renderVocab(); renderGrammar(); renderSchedule(); renderHistory(); renderNotes(); }
+        } catch (err) { console.warn('Yue Yue restore render:', err); }
+        YY3_setSaveStatus(`Đã khôi phục dữ liệu từ ${best.source}.`, 'success');
+        saveState();
+      } else if (best) {
+        YY3_setSaveStatus('Tiến trình đã được khôi phục trên thiết bị này.', 'success');
+        // Seed the second stores from existing local data.
+        const raw = JSON.stringify(state);
+        try { localStorage.setItem(YY3_BACKUP_KEY, raw); } catch (_) {}
+        YY3_writeIndexedDb(raw);
+      } else {
+        YY3_setSaveStatus('Tự động lưu đã sẵn sàng. Tiến trình mới sẽ được ghi trên thiết bị này.', 'success');
+        saveState();
+      }
+    } catch (err) {
+      console.warn('Yue Yue restore:', err);
+      YY3_setSaveStatus('Không thể khởi tạo sao lưu tự động. Hãy dùng Xuất JSON.', 'warning');
+    } finally {
+      YY3_restoring = false;
+    }
+  }
+
+  function YY3_mountStorageUI() {
+    const exportButton = document.getElementById('exportData');
+    const card = exportButton?.closest('.card');
+    if (card && !document.getElementById('yyAutoSaveStatus')) {
+      const status = document.createElement('div');
+      status.id = 'yyAutoSaveStatus';
+      status.className = 'notice';
+      status.style.marginTop = '14px';
+      status.innerHTML = '<span class="notice-icon">💾</span><div><strong>Tự động lưu đang khởi tạo…</strong><div class="tiny muted">Bản chính + bản sao cục bộ.</div></div>';
+      card.appendChild(status);
+    }
+    const view = document.getElementById('view-profile');
+    if (view && !document.getElementById('yyLearningHistory')) {
+      const section = document.createElement('div');
+      section.innerHTML = '<div class="section-head"><div><h2>Lịch sử học tập gần đây</h2><p>Các bài kiểm tra và hoạt động đã được lưu tự động trên thiết bị này.</p></div></div><div class="history-list" id="yyLearningHistory"></div>';
+      view.appendChild(section);
+    }
+    if (card) {
+      const note = card.querySelector('.notice p');
+      if (note) note.textContent = 'Tiến trình tự động lưu trên thiết bị/trình duyệt hiện tại bằng bộ nhớ cục bộ và bản sao dự phòng. Để chuyển sang thiết bị khác, hãy xuất JSON rồi nhập ở máy mới; đồng bộ cloud cần thêm tài khoản và máy chủ.';
+    }
+  }
+
+  function YY3_renderLearningHistory() {
+    const el = document.getElementById('yyLearningHistory');
+    if (!el) return;
+    const events = [];
+    (state.lessonHistory || []).forEach(x => events.push({ type: x.type === 'placement' ? 'Kiểm tra năng lực' : 'Bài luyện / Quiz', title: x.title || `${x.score ?? 0}/${x.total ?? 0} · ${x.pct ?? 0}%`, at: x.at || x.date, detail: x.detail || '' }));
+    (state.speakingSessions || []).forEach(x => events.push({ type: 'Luyện giao tiếp', title: `${x.minutes || 0} phút · ${x.replyCount || 0} lượt trả lời`, at: x.at, detail: x.scenario || '' }));
+    (state.writingAttempts || []).forEach(x => events.push({ type: 'Luyện viết', title: x.title || x.prompt || 'Bài viết', at: x.at, detail: `${x.hanzi || 0} chữ Hán` }));
+    events.sort((a,b) => (Date.parse(b.at || '') || 0) - (Date.parse(a.at || '') || 0));
+    el.innerHTML = events.length ? events.slice(0,20).map(x => `<div class="history-item"><div><strong>${YY3_esc(x.type)}</strong><div class="tiny muted">${YY3_esc(x.title)}</div><div class="tiny muted">${YY3_esc(x.detail)}</div></div><span class="tiny muted">${YY3_esc(YY3_date(x.at))}</span></div>`).join('') : '<div class="empty"><div class="big">🌱</div>Chưa có hoạt động nào được lưu. Sau bài test hoặc buổi học đầu tiên, lịch sử sẽ xuất hiện ở đây.</div>';
+  }
+
+  function YY3_reviewDetails(details) {
+    const levels = ['HSK1','HSK2','HSK3','HSK4'];
+    const rows = (details || []).map((d, i) => {
+      const q = d.question || d.qData || placementQs[d.index ?? i] || {};
+      const prompt = d.prompt || d.q || q.q || 'Câu hỏi';
+      const opts = d.opts || q.opts || [];
+      const selectedIndex = Number.isInteger(d.selected) ? d.selected : (Number.isInteger(d.selectedIndex) ? d.selectedIndex : null);
+      const answerIndex = Number.isInteger(d.answer) ? d.answer : (Number.isInteger(d.answerIndex) ? d.answerIndex : q.a);
+      const isCorrect = typeof d.correct === 'boolean' ? d.correct : (selectedIndex !== null && selectedIndex === answerIndex);
+      const selected = selectedIndex === null ? 'Chưa trả lời' : (opts[selectedIndex] ?? 'Lựa chọn không xác định');
+      const answer = opts[answerIndex] ?? d.correctText ?? 'Chưa có đáp án';
+      const why = d.why || q.why || 'Tài liệu chưa có phần giải thích cho câu hỏi này.';
+      const audio = d.audio || q.audio;
+      const level = d.level || q.level || 'HSK';
+      const skill = d.skill || q.skill || YY3_kindLabel(d.kind || q.kind);
+      const noAnswer = selectedIndex === null;
+      return { level, isCorrect, html: `<article class="yy-review-row ${isCorrect ? 'is-correct' : 'is-wrong'}"><div class="yy-review-head"><span class="yy-review-badge ${isCorrect?'ok':'bad'}">${isCorrect?'✓ Đúng':noAnswer?'— Bỏ trống':'✕ Sai'}</span><span class="tiny muted">${YY3_esc(level)} · ${YY3_esc(skill)}</span></div><strong class="yy-review-question">${i+1}. ${YY3_esc(prompt)}</strong><div class="yy-review-answer"><div><b>Bạn chọn:</b> ${YY3_esc(selected)}</div><div><b>Đáp án đúng:</b> ${YY3_esc(answer)}</div></div>${audio?`<div class="tiny muted">Audio sau khi nộp: ${YY3_esc(audio)}</div>`:''}<div class="yy-review-why"><b>Giải thích:</b> ${YY3_esc(why)}</div></article>` };
+    });
+    return levels.map(level => {
+      const group = rows.filter(x => x.level === level);
+      if (!group.length) return '';
+      const right = group.filter(x => x.isCorrect).length;
+      return `<details class="yy-review-level"><summary>${level} · ${right}/${group.length} câu đúng · Xem đáp án</summary>${group.map(x=>x.html).join('')}</details>`;
+    }).join('') + rows.filter(x=>!levels.includes(x.level)).map(x=>x.html).join('');
+  }
+
+  function YY3_skillAction(key, level) {
+    const actions = {
+      vocabulary: `Học 8–12 từ ${level} mỗi phiên; sau đó che Pinyin và nghĩa để tự nhớ chữ Hán. Ôn lại các từ đến hạn trước khi học từ mới.`,
+      grammar: `Mỗi phiên tập trung 1 cấu trúc ${level}: đọc công thức, phân biệt lỗi thường gặp, làm 5 câu và tự viết 3 câu của riêng bạn.`,
+      listening: `Nghe 2 đoạn ngắn ${level} không xem transcript trước; ghi từ khóa, trả lời câu hỏi rồi nghe lại với transcript.`,
+      reading: `Đọc 1 đoạn ${level}; gạch ý chính, tìm chi tiết và tự tóm tắt bằng 1–2 câu tiếng Trung.`,
+      sentence: `Luyện 5 câu sắp xếp từ, giải thích vị trí trạng ngữ và thành phần câu, rồi tự tạo 3 câu tương tự.`,
+      writing: `Viết 3–5 câu có dùng từ và cấu trúc vừa học. Tự kiểm tra trật tự từ, lượng từ, thời gian và liên kết ý.`,
+      speaking: `Luyện hội thoại 5–15 phút; tối thiểu 3 lượt trả lời có nội dung, sau đó ghi lại 2 câu muốn diễn đạt tốt hơn.`
+    };
+    return actions[key] || 'Luyện tập kiến thức ở cấp độ hiện tại và ghi lại lỗi cần sửa.';
+  }
+
+  function YY3_buildRoadmap(result, plan) {
+    const levels = result?.levelStats || state.placement?.levelStats || {};
+    const startLevel = plan?.level || 'HSK1';
+    const currentN = Number(startLevel.replace('HSK','')) || 1;
+    const skillRows = (plan?.ranked || []).filter(x => x.score !== null && x.score !== undefined)
+      .sort((a,b) => a.score - b.score);
+    const weak1 = skillRows[0] || { key:'vocabulary', label:'Từ vựng', score:null };
+    const weak2 = skillRows[1] || { key:'grammar', label:'Ngữ pháp', score:null };
+    const levelRow = levels[startLevel] || { right:0,total:0 };
+    const levelPct = levelRow.total ? Math.round(levelRow.right / levelRow.total * 100) : null;
+    const targetBridge = currentN < 4 ? `HSK${currentN+1}` : 'HSK4';
+    const minutes = Number(state.minutes) || 30;
+    const alloc = plan?.allocations || {};
+    const confidence = result?.total ? `Sàng lọc ${result.total} câu · ${levelRow.total || 0} câu ở ${startLevel}` : 'Đang cập nhật từ lịch sử học';
+    const weeks = [
+      { title:'Tuần 1 · Vá lỗ hổng ưu tiên', detail:`Tập trung ${weak1.label.toLowerCase()} (${weak1.score ?? 'chưa đủ dữ liệu'}%) và ${weak2.label.toLowerCase()} (${weak2.score ?? 'chưa đủ dữ liệu'}%). Bắt đầu ở ${startLevel}; ôn kiến thức nền trước khi tăng độ khó.`, action:YY3_skillAction(weak1.key,startLevel) },
+      { title:'Tuần 2 · Củng cố cấp hiện tại', detail:`Củng cố kiến thức ${startLevel} bằng truy xuất chủ động, bài tập có giải thích và ôn cách quãng. Nếu bằng chứng ổn định, chuyển dần sang ${targetBridge}.`, action:YY3_skillAction(weak2.key,startLevel) },
+      { title:'Tuần 3 · Xây cầu lên HSK4', detail:currentN < 4 ? `Mở rộng từ ${targetBridge}, đồng thời giữ bài ôn ${startLevel}. Chỉ tăng độ khó khi các bài kiểm tra ngắn đạt tối thiểu 70% ở nhiều lượt.` : 'Tập trung HSK4: từ vựng theo chủ đề, cấu trúc câu phức, nghe và đọc văn bản dài hơn.', action:`Kết hợp từ vựng + ngữ pháp ${targetBridge}, một bài nghe và một bài đọc theo chủ đề. ${YY3_skillAction('sentence',targetBridge)}` },
+      { title:'Tuần 4 · Chuyển kiến thức thành giao tiếp', detail:'Dùng kiến thức đã học trong tình huống thực tế; cuối tuần làm bài kiểm tra tổng hợp để cập nhật lại hồ sơ năng lực.', action:YY3_skillAction('speaking','HSK4') }
+    ];
+    const days = [
+      ['Ngày 1',`${weak1.label}: ${YY3_skillAction(weak1.key,startLevel)}`],
+      ['Ngày 2',`${weak2.label}: ${YY3_skillAction(weak2.key,startLevel)}`],
+      ['Ngày 3','Ôn từ đến hạn + học nhóm từ mới ở cấp độ khởi điểm.'],
+      ['Ngày 4','Học 1 cấu trúc ngữ pháp; làm bài tập và tự viết 3 câu.'],
+      ['Ngày 5','Nghe và đọc một chủ đề; ghi lại từ khóa và ý chính.'],
+      ['Ngày 6','Giao tiếp 5–15 phút + viết một đoạn ngắn có dùng từ mới.'],
+      ['Ngày 7','Làm quiz tổng hợp 10 câu; xem lại toàn bộ đáp án và điều chỉnh kế hoạch.']
+    ];
+    return { startLevel, targetLevel:'HSK4', minutes, allocations:alloc, weak1, weak2, levelPct, confidence, weeks, days };
+  }
+
+  function YY3_roadmapHtml(result, plan, compact = false) {
+    const r = YY3_buildRoadmap(result, plan);
+    const scoreLabel = (r.weak1.score == null ? 'Chưa có' : `${r.weak1.score}%`);
+    const weeks = r.weeks.map((w,i)=>`<div class="yy-roadmap-week"><div class="yy-roadmap-week-head"><span class="yy-week-number">0${i+1}</span><strong>${YY3_esc(w.title)}</strong></div><p>${YY3_esc(w.detail)}</p><div class="yy-roadmap-action"><b>Việc cần làm:</b> ${YY3_esc(w.action)}</div></div>`).join('');
+    const days = compact ? '' : `<details class="yy-roadmap-days"><summary>Mở lịch học 7 ngày đầu</summary>${r.days.map(d=>`<div class="history-item"><strong>${YY3_esc(d[0])}</strong><span>${YY3_esc(d[1])}</span></div>`).join('')}</details>`;
+    return `<section class="yy-roadmap"><div class="yy-roadmap-title"><div><span class="pill green">LỘ TRÌNH CÁ NHÂN HÓA</span><h3>Đích đến: HSK4 + giao tiếp tự tin 🌼</h3><p class="tiny muted">Khởi điểm đề xuất: <b>${YY3_esc(r.startLevel)}</b> · ${YY3_esc(r.confidence)} · ${r.minutes} phút/ngày</p></div><span class="yy-roadmap-sun">🧭</span></div><div class="yy-roadmap-metrics"><div><b>${YY3_esc(r.startLevel)}</b><small>Cấp bắt đầu</small></div><div><b>${YY3_esc(scoreLabel)}</b><small>Điểm nhóm cần cải thiện nhất</small></div><div><b>30%</b><small>Thời lượng giao tiếp bảo vệ</small></div></div><div class="yy-roadmap-focus"><b>Hai ưu tiên hiện tại</b><p>① ${YY3_esc(r.weak1.label)}: ${r.weak1.score==null?'cần thêm dữ liệu':`${r.weak1.score}%`} · ② ${YY3_esc(r.weak2.label)}: ${r.weak2.score==null?'cần thêm dữ liệu':`${r.weak2.score}%`}</p></div><div class="yy-roadmap-weeks">${weeks}</div>${days}<div class="yy-roadmap-time"><b>Phân bổ buổi học hiện tại (${r.minutes} phút)</b><p>Từ vựng ${r.allocations.vocabulary||0}' · Ngữ pháp ${r.allocations.grammar||0}' · Nghe ${r.allocations.listening||0}' · Đọc ${r.allocations.reading||0}' · Viết ${r.allocations.writing||0}' · Giao tiếp ${r.allocations.speaking||0}'.</p></div><div class="tiny muted">Lộ trình 4 tuần này là chu kỳ khởi động, không phải cam kết đủ thời gian để thi đỗ HSK4. Bài sàng lọc chưa đo trực tiếp kỹ năng viết và nói; các kỹ năng này cần thêm bài đánh giá riêng. Nội dung tiếp theo bị giới hạn bởi số học liệu hiện có trong website.</div></section>`;
+  }
+
+  function YY3_renderPlacementResult(result) {
+    if (!result) return;
+    const el = document.getElementById('placementResult');
+    if (!el) return;
+    const plan = getAdaptivePlan();
+    const details = result.answerDetails || [];
+    const levelStats = result.levelStats || {};
+    const levelHtml = ['HSK1','HSK2','HSK3','HSK4'].map(level => {
+      const x = levelStats[level] || {right:0,total:0};
+      return `<div class="history-item"><strong>${level}</strong><span>${x.right||0}/${x.total||0} · ${x.total?Math.round(x.right/x.total*100):0}%</span></div>`;
+    }).join('');
+    const skillHtml = Object.entries(result.skills || {}).map(([k,v]) => {
+      const pct = v.total ? Math.round(v.right/v.total*100) : 0;
+      return `<div class="skill-row"><span>${YY3_esc(k)}</span><div class="progress-line"><span style="width:${pct}%"></span></div><strong>${pct}%</strong></div>`;
+    }).join('');
+    const review = details.length ? `<div class="yy-answer-review"><div class="section-head"><div><h3>Xem lại từng câu (${details.length})</h3><p>Đối chiếu câu trả lời, đáp án đúng và lý do. Câu nghe chỉ hiện transcript sau khi đã nộp.</p></div></div>${YY3_reviewDetails(details)}</div>` : `<div class="notice"><span class="notice-icon">📒</span><div><strong>Bài kiểm tra cũ chưa lưu từng câu</strong><p>Lần làm bài từ phiên bản này trở đi sẽ lưu đáp án và giải thích chi tiết.</p></div></div>`;
+    el.innerHTML = `<div class="card panel"><div style="text-align:center"><div style="font-size:45px">${result.pct>=75?'🌻':result.pct>=50?'🌼':'🌱'}</div><span class="pill">KẾT QUẢ SÀNG LỌC · HSK 2.0</span><div class="result-score" style="margin:10px 0">${result.pct}%</div><h2 style="margin:0">Bạn đúng ${result.score}/${result.total} câu</h2><p class="muted">Hoàn thành: ${YY3_esc(YY3_date(result.at))}. Đây là kết quả sàng lọc để cá nhân hóa việc học, không phải điểm thi chứng chỉ. Mỗi cấp có 10 câu; mỗi kỹ năng khách quan có 2 câu ở mỗi cấp nên độ tin cậy còn sơ bộ.</p></div><div class="section-head"><div><h3>Năng lực theo kỹ năng</h3><p>Nhóm cần ưu tiên: ${YY3_esc(plan.focus?.[0]?.label || 'kiến thức tổng hợp')}.</p></div></div>${skillHtml}<div class="section-head"><div><h3>Năng lực theo cấp độ</h3><p>Điểm từng cấp giúp xác định cấp bắt đầu, không thay thế đề thi chuẩn.</p></div></div>${levelHtml}<div class="notice" style="margin-top:14px"><span class="notice-icon">🌷</span><div><strong>Đề xuất bắt đầu: ${YY3_esc(plan.level)} · Mục tiêu HSK4 + giao tiếp</strong><p>Ưu tiên ${YY3_esc(plan.focus?.[0]?.label || 'kiến thức nền').toLowerCase()}; giao tiếp chiếm 30% thời lượng ngày học. Lộ trình sẽ cập nhật từ những bài quiz và hoạt động tiếp theo.</p></div></div>${YY3_roadmapHtml(result,plan,false)}${review}<div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:15px"><button class="btn btn-primary" data-go="home">Về trang chủ & lộ trình →</button><button class="btn btn-soft" id="yyNewPlacement">Làm bài kiểm tra mới</button></div></div>`;
+    el.classList.remove('hidden');
+  }
+
+  // Preserve placement drafts between refreshes and navigation.
+  function YY3_renderDraftResume() {
+    const start = document.getElementById('placementStart');
+    if (!start) return;
+    let box = document.getElementById('yyPlacementDraftBox');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'yyPlacementDraftBox';
+      box.style.marginTop = '12px';
+      start.appendChild(box);
+    }
+    const draft = state.placementDraft;
+    if (draft && Array.isArray(draft.answers) && (draft.answers.some(x => x !== null && x !== undefined))) {
+      const answered = draft.answers.filter(x => x !== null && x !== undefined).length;
+      box.innerHTML = `<div class="notice"><span class="notice-icon">⏯️</span><div><strong>Bạn có bài kiểm tra đang làm dở</strong><p>Đã chọn ${answered}/${placementQs.length} câu. Tiến trình được lưu trên thiết bị này.</p><button class="btn btn-primary btn-small" id="yyResumePlacement">Tiếp tục bài đang làm →</button></div></div>`;
+    } else box.innerHTML = '';
+  }
+
+  // Keep the original test navigation, but persist the chosen answers and expose resume.
+  const YY3_startButton = document.getElementById('startPlacement');
+  if (YY3_startButton && typeof YY3_startButton.onclick === 'function') {
+    const originalStart = YY3_startButton.onclick;
+    YY3_startButton.onclick = function(event) {
+      state.placementDraft = { index: 0, answers: [] };
+      originalStart.call(this, event);
+      saveState();
+    };
+  }
+
+  document.addEventListener('click', event => {
+    const resume = event.target.closest('#yyResumePlacement');
+    if (resume) {
+      const draft = state.placementDraft || { index: 0, answers: [] };
+      pAnswers = Array.isArray(draft.answers) ? [...draft.answers] : [];
+      pIndex = Math.max(0, Math.min(placementQs.length - 1, Number(draft.index) || 0));
+      document.getElementById('placementStart')?.classList.add('hidden');
+      document.getElementById('placementResult')?.classList.add('hidden');
+      document.getElementById('placementQuiz')?.classList.remove('hidden');
+      renderPlacementQuestion();
+      toast('Đã khôi phục bài kiểm tra đang làm.');
+      return;
+    }
+    const fresh = event.target.closest('#yyNewPlacement');
+    if (fresh) {
+      document.getElementById('placementResult')?.classList.add('hidden');
+      document.getElementById('placementQuiz')?.classList.add('hidden');
+      document.getElementById('placementStart')?.classList.remove('hidden');
+      state.placementDraft = null;
+      YY3_renderDraftResume();
+      saveState();
+      return;
+    }
+    const openReview = event.target.closest('[data-yy-review-index]');
+    if (openReview) {
+      const item = state.quizHistory[Number(openReview.dataset.yyReviewIndex)];
+      if (item?.answerReview?.length) {
+        openModal(`<div class="modal-head"><div><span class="pill">${YY3_esc(item.kind)}</span><h2 style="margin-top:9px">Xem lại ${item.total} câu</h2><p class="tiny muted">${YY3_esc(YY3_date(item.date))} · ${item.score}/${item.total} đúng</p></div><button class="modal-close" data-close>✕</button></div><div class="yy-answer-review">${YY3_reviewDetails(item.answerReview)}</div>`);
+      } else toast('Bài kiểm tra cũ chưa có dữ liệu đáp án từng câu.');
+      return;
+    }
+  });
+
+  document.getElementById('placementQuiz')?.addEventListener('click', event => {
+    if (event.target.closest('[data-panswer]') || ['pNext','pPrev'].includes(event.target.id)) {
+      setTimeout(() => {
+        const quiz = document.getElementById('placementQuiz');
+        if (!quiz || quiz.classList.contains('hidden') || !Array.isArray(pAnswers)) return;
+        state.placementDraft = { index: pIndex, answers: [...pAnswers], updatedAt: new Date().toISOString() };
+        saveState();
+        YY3_renderDraftResume();
+      }, 0);
+    }
+  });
+
+  // Replace the old aggregate-only placement result with answer-by-answer feedback and an actual plan.
+  finishPlacement = function YY3_finishPlacement() {
+    let correct = 0;
+    const skills = {}, levelStats = {}, answerDetails = [];
+    placementQs.forEach((q, i) => {
+      const selected = pAnswers[i] === undefined ? null : pAnswers[i];
+      const ok = selected !== null && selected === q.a;
+      skills[q.skill] ||= { right:0, total:0 };
+      levelStats[q.level] ||= { right:0, total:0 };
+      skills[q.skill].total++;
+      levelStats[q.level].total++;
+      if (ok) { correct++; skills[q.skill].right++; levelStats[q.level].right++; }
+      answerDetails.push({
+        index:i, level:q.level, skill:q.skill, kind:q.kind || '',
+        prompt:q.q, opts:[...(q.opts || [])], selected, answer:q.a,
+        correct:ok, why:q.why || '', audio:q.audio || ''
+      });
+    });
+    const pct = Math.round(correct / placementQs.length * 100);
+    const result = { score:correct, total:placementQs.length, pct, skills, levelStats, answerDetails, assessmentVersion:4, at:new Date().toISOString() };
+    state.placementHistory.unshift(result);
+    state.placementHistory = state.placementHistory.slice(0,20);
+    state.placement = result;
+    state.placementDraft = null;
+    state.lessonHistory.unshift({ type:'placement', score:correct, total:placementQs.length, pct, at:result.at, title:`Sàng lọc đầu vào · ${pct}%`, detail:`Đúng ${correct}/${placementQs.length} câu` });
+    state.lessonHistory = state.lessonHistory.slice(0,400);
+    const plan = getAdaptivePlan();
+    state.adaptivePlan = { level:plan.level, goal:'balanced', updatedAt:new Date().toISOString() };
+    state.roadmapUpdatedAt = new Date().toISOString();
+    saveState();
+    document.getElementById('placementQuiz')?.classList.add('hidden');
+    document.getElementById('placementStart')?.classList.add('hidden');
+    YY3_renderPlacementResult(result);
+    const weakest = plan.focus?.[0]?.label || 'kiến thức tổng hợp';
+    const summary = document.getElementById('placementSummary');
+    if (summary) summary.innerHTML = `<span class="notice-icon">🌼</span><div><strong>Đánh giá gần nhất: ${pct}% · Khởi điểm ${YY3_esc(plan.level)}</strong><p>Ưu tiên cải thiện ${YY3_esc(weakest.toLowerCase())}. Đã lưu chi tiết ${placementQs.length} câu và lộ trình.</p></div>`;
+    renderHome(); renderAdaptivePanel(); renderVocab(); renderGrammar(); renderHistory();
+    YY3_renderLearningHistory();
+  };
+
+  // Keep answer-level detail for all future quizzes, not only mistakes.
+  const YY3_originalFinishQuiz = finishQuiz;
+  finishQuiz = function YY3_finishQuizWithReview() {
+    if (!quizRun) return YY3_originalFinishQuiz();
+    const snapshot = {
+      items: quizRun.items.map(q => ({ ...q, opts:[...(q.opts || [])] })),
+      answers:[...quizRun.answers], type:quizRun.type, level:quizRun.level,
+      startedAt:quizRun.startedAt
+    };
+    YY3_originalFinishQuiz();
+    const review = snapshot.items.map((q,i) => ({
+      index:i, level:q.level || snapshot.level || '', skill:q.skill || YY3_kindLabel(q.kind,q.skill),
+      kind:q.kind || '', prompt:q.q || '', opts:q.opts || [],
+      selected:snapshot.answers[i] === undefined ? null : snapshot.answers[i],
+      answer:q.a, correct:snapshot.answers[i] !== undefined && snapshot.answers[i] === q.a,
+      why:q.why || '', audio:q.audio || ''
+    }));
+    if (state.quizHistory?.[0]) {
+      state.quizHistory[0].answerReview = review;
+      state.quizHistory[0].type = snapshot.type;
+      state.quizHistory[0].level = snapshot.level;
+      state.quizHistory[0].reviewVersion = 1;
+    }
+    if (state.lessonHistory?.[0]) state.lessonHistory[0].answerReview = review;
+    const wrap = document.getElementById('quizActive');
+    if (wrap) {
+      const right = review.filter(x=>x.correct).length;
+      wrap.insertAdjacentHTML('beforeend', `<div class="yy-answer-review card panel"><div class="section-head"><div><h3>Xem lại toàn bộ ${review.length} câu</h3><p>${right} câu đúng · ${review.length-right} câu sai. Mỗi câu có đáp án và lý do.</p></div></div>${YY3_reviewDetails(review)}</div>`);
+    }
+    state.roadmapUpdatedAt = new Date().toISOString();
+    saveState();
+    renderHistory(); renderHome(); YY3_renderLearningHistory();
+  };
+
+  // Re-render the quiz history with a review action for tests that contain saved answer details.
+  const YY3_originalRenderHistory = renderHistory;
+  renderHistory = function YY3_renderHistoryWithReview() {
+    YY3_originalRenderHistory();
+    const el = document.getElementById('quizHistory');
+    if (!el) return;
+    [...el.children].forEach((row, index) => {
+      const item = state.quizHistory[index];
+      if (item?.answerReview?.length && !row.querySelector('[data-yy-review-index]')) {
+        row.insertAdjacentHTML('beforeend', `<button class="btn btn-outline btn-small" data-yy-review-index="${index}" style="margin-left:8px">Xem đáp án</button>`);
+      }
+    });
+  };
+
+  // A detailed four-week starter roadmap is rendered both on the result screen and dashboard.
+  const YY3_originalRenderAdaptive = renderAdaptivePanel;
+  renderAdaptivePanel = function YY3_renderAdaptiveWithRoadmap() {
+    YY3_originalRenderAdaptive();
+    const el = document.getElementById('adaptivePanel');
+    if (!el || !state.placement) return;
+    el.insertAdjacentHTML('beforeend', YY3_roadmapHtml(state.placement, getAdaptivePlan(), true));
+  };
+
+  // Show the most recent assessment after returning to the placement page or reopening the website.
+  const YY3_originalGo = go;
+  go = function YY3_goWithSavedAssessment(page) {
+    YY3_originalGo(page);
+    if (page === 'placement') {
+      if (state.placement) {
+        document.getElementById('placementStart')?.classList.add('hidden');
+        document.getElementById('placementQuiz')?.classList.add('hidden');
+        YY3_renderPlacementResult(state.placement);
+      } else {
+        document.getElementById('placementResult')?.classList.add('hidden');
+        document.getElementById('placementStart')?.classList.remove('hidden');
+        YY3_renderDraftResume();
+      }
+    }
+  };
+
+  // Keep the assessment summary's old records accessible from the result screen.
+  function YY3_attachReviewStyles() {
+    if (document.getElementById('yy3Styles')) return;
+    const style = document.createElement('style');
+    style.id = 'yy3Styles';
+    style.textContent = `
+      .yy-roadmap{margin:18px 0;padding:16px;border:1px solid rgba(211,170,84,.32);border-radius:20px;background:linear-gradient(145deg,rgba(255,249,232,.92),rgba(255,255,255,.98));color:#51432d}
+      .yy-roadmap-title{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.yy-roadmap-title h3{margin:9px 0 5px}.yy-roadmap-sun{font-size:36px}
+      .yy-roadmap-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:13px 0}.yy-roadmap-metrics>div{padding:10px;border-radius:13px;background:#fff5dc}.yy-roadmap-metrics b{display:block;font-size:18px;color:#8b6228}.yy-roadmap-metrics small{display:block;font-size:11px;color:#806c4d;margin-top:3px}
+      .yy-roadmap-focus{padding:11px 13px;border-radius:13px;background:#f2f6ea;margin-bottom:12px}.yy-roadmap-focus p{margin:5px 0 0;font-size:13px}
+      .yy-roadmap-week{padding:12px 0;border-top:1px solid rgba(150,126,84,.18)}.yy-roadmap-week-head{display:flex;align-items:center;gap:9px}.yy-week-number{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#f2d895;color:#79551f;font-weight:800;font-size:11px}.yy-roadmap-week p{margin:7px 0;font-size:13px;line-height:1.55}.yy-roadmap-action{font-size:12px;color:#65553a;background:#fff;border-radius:10px;padding:9px 11px;line-height:1.5}
+      .yy-roadmap-days{margin:12px 0}.yy-roadmap-days summary,.yy-review-level summary,.yy-answer-review>details>summary{cursor:pointer;font-weight:750;color:#89652c;padding:10px 0}
+      .yy-roadmap-time{padding:12px;background:#edf5e9;border-radius:12px;margin:10px 0}.yy-roadmap-time p{margin:5px 0 0;font-size:12px;line-height:1.6}
+      .yy-answer-review{margin-top:18px}.yy-review-level{border:1px solid rgba(180,150,96,.25);border-radius:13px;padding:0 12px;margin:9px 0;background:#fffdf8}.yy-review-level summary{padding:12px 0}
+      .yy-review-row{padding:12px 0;border-top:1px solid #eee6d6}.yy-review-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}.yy-review-badge{font-size:11px;font-weight:800;padding:4px 8px;border-radius:20px}.yy-review-badge.ok{background:#e5f3e5;color:#387a48}.yy-review-badge.bad{background:#fbe9e5;color:#a84e46}.yy-review-question{display:block;line-height:1.55;margin-bottom:8px}.yy-review-answer{display:grid;gap:4px;font-size:13px;line-height:1.5}.yy-review-why{font-size:13px;line-height:1.55;margin-top:8px;background:#fff6df;padding:9px 10px;border-radius:9px}
+      @media(max-width:600px){.yy-roadmap{padding:12px}.yy-roadmap-metrics{gap:6px}.yy-roadmap-metrics>div{padding:8px}.yy-roadmap-metrics b{font-size:15px}.yy-roadmap-metrics small{font-size:10px}.yy-roadmap-title h3{font-size:17px}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  YY3_mountStorageUI();
+  YY3_normalizeState();
+  YY3_attachReviewStyles();
+  YY3_renderDraftResume();
+  renderHistory();
+  renderHome();
+  YY3_renderLearningHistory();
+  YY3_restoreBestSnapshot();
+
+  // Debounced persistence for editable profile, schedule, notes and writing draft fields.
+  document.addEventListener('input', event => {
+    const target = event.target;
+    if (!target) return;
+    if (target.id === 'profileName') state.name = target.value;
+    if (target.id === 'profileGoal') state.goal = target.value;
+    if (target.id === 'personalNotes') state.personalNotes = target.value;
+    if (target.id === 'durationRange') state.minutes = Math.max(15, Math.min(90, Number(target.value) || 30));
+    if (target.id === 'writingInput') state.writingDraft = target.value;
+    const grammarNote = target.closest('[data-grammar-note]');
+    if (grammarNote) state.grammarNotes[grammarNote.dataset.grammarNote] = grammarNote.value;
+    if (['profileName','profileGoal','personalNotes','durationRange','writingInput'].includes(target.id) || grammarNote) {
+      clearTimeout(YY3_saveTimer);
+      YY3_saveTimer = setTimeout(() => saveState(), 450);
+    }
+  });
+  ['time1','time2','time3','profileGoal'].forEach(id => {
+    document.getElementById(id)?.addEventListener('change', () => {
+      state.times = [1,2,3].map(n => document.getElementById('time'+n)?.value || ['07:30','12:30','20:30'][n-1]);
+      if (id === 'profileGoal') state.goal = document.getElementById('profileGoal').value;
+      saveState();
+    });
+  });
+  document.getElementById('weekdayTabs')?.addEventListener('click', () => setTimeout(saveState, 0));
+  document.getElementById('durationRange')?.addEventListener('change', () => saveState());
+
+  // Flush the synchronous local copies when the tab is hidden or the browser is closing.
+  function YY3_flushLocalCopy() {
+    try {
+      state.lastSavedAt = new Date().toISOString();
+      const raw = JSON.stringify(state);
+      localStorage.setItem(STORAGE_KEY, raw);
+      localStorage.setItem(YY3_BACKUP_KEY, raw);
+      YY3_writeIndexedDb(raw);
+      YY3_setSaveStatus('Đã tự lưu khi rời trang.', 'success');
+    } catch (err) {
+      console.warn('Yue Yue flush:', err);
+      YY3_setSaveStatus('Không thể tự lưu khi rời trang; hãy xuất JSON.', 'error');
+    }
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') YY3_flushLocalCopy(); });
+  window.addEventListener('pagehide', YY3_flushLocalCopy);
+  window.addEventListener('beforeunload', YY3_flushLocalCopy);
+  setInterval(() => { try { saveState(); } catch (_) {} }, 30000);
+
+  // If a learner changes route, refresh the saved result and resume panel when needed.
+  document.getElementById('placementStart')?.addEventListener('click', event => {
+    if (event.target.closest('#startPlacement')) setTimeout(() => { state.placementDraft = { index:pIndex, answers:[...pAnswers] }; saveState(); }, 0);
+  });
+})();
+
+</script>
+<script id="yy-learning-resume-archive-v1">
+/* YUE YUE · active quiz resume + archived placement review */
+(() => {
+  'use strict';
+
+  state.activeQuizDraft = state.activeQuizDraft && typeof state.activeQuizDraft === 'object' ? state.activeQuizDraft : null;
+
+  // Persist a normal quiz's question set and answer position, not just its final score.
+  function YY3_captureQuizDraft() {
+    if (!quizRun || !Array.isArray(quizRun.items)) return;
+    state.activeQuizDraft = {
+      items: quizRun.items.map(q => ({ ...q, opts: Array.isArray(q.opts) ? [...q.opts] : [] })),
+      idx: quizRun.idx || 0,
+      answers: [...(quizRun.answers || [])],
+      type: quizRun.type || 'daily',
+      level: quizRun.level || 'HSK4',
+      skillKey: quizRun.skillKey || null,
+      startedAt: quizRun.startedAt || new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+    saveState();
+  }
+
+  function YY3_renderQuizDraftResume() {
+    const view = document.getElementById('view-tests');
+    if (!view) return;
+    let box = document.getElementById('yyQuizDraftResume');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'yyQuizDraftResume';
+      box.className = 'notice';
+      const intro = view.querySelector('.page-intro');
+      if (intro) intro.insertAdjacentElement('afterend', box);
+      else view.insertAdjacentElement('afterbegin', box);
+    }
+    const draft = state.activeQuizDraft;
+    if (!draft || !Array.isArray(draft.items) || !draft.items.length || document.getElementById('quizActive')) {
+      box.classList.add('hidden');
+      box.innerHTML = '';
+      return;
+    }
+    const answered = (draft.answers || []).filter(x => x !== undefined && x !== null).length;
+    const total = draft.items.length;
+    const idx = Math.min(total - 1, Math.max(0, Number(draft.idx) || 0));
+    box.classList.remove('hidden');
+    box.innerHTML = `<span class="notice-icon">⏯️</span><div style="flex:1"><strong>Bạn có bài quiz đang làm dở</strong><p>Đã trả lời ${answered}/${total} câu · đang ở câu ${idx+1}. Bản nháp được tự động lưu trên thiết bị này.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><button class="btn btn-primary btn-small" id="yyResumeQuiz">Tiếp tục bài quiz →</button><button class="btn btn-outline btn-small" id="yyDiscardQuiz">Bỏ bài đang làm</button></div></div>`;
+  }
+
+  const YY3_originalStartQuiz = startQuiz;
+  startQuiz = function YY3_startQuizWithAutosave(...args) {
+    YY3_originalStartQuiz(...args);
+    YY3_captureQuizDraft();
+    YY3_renderQuizDraftResume();
+  };
+
+  const YY3_originalFinishQuizWithReview = finishQuiz;
+  finishQuiz = function YY3_finishQuizAndClearDraft() {
+    state.activeQuizDraft = null;
+    YY3_originalFinishQuizWithReview();
+    YY3_renderQuizDraftResume();
+  };
+
+  const testsView = document.getElementById('view-tests');
+  if (testsView) {
+    testsView.addEventListener('click', event => {
+      const resume = event.target.closest('#yyResumeQuiz');
+      if (resume) {
+        const d = state.activeQuizDraft;
+        if (!d || !Array.isArray(d.items) || !d.items.length) return;
+        quizRun = {
+          items: d.items.map(q => ({ ...q, opts: Array.isArray(q.opts) ? [...q.opts] : [] })),
+          idx: Math.min(d.items.length - 1, Math.max(0, Number(d.idx) || 0)),
+          answers: [...(d.answers || [])],
+          type: d.type || 'daily', level: d.level || 'HSK4', skillKey: d.skillKey || null,
+          startedAt: d.startedAt || new Date().toISOString()
+        };
+        let wrap = document.getElementById('quizActive');
+        if (wrap) wrap.remove();
+        wrap = document.createElement('div');
+        wrap.id = 'quizActive'; wrap.className = 'quiz-shell'; wrap.style.marginTop = '18px';
+        testsView.appendChild(wrap);
+        renderQuizQ();
+        boxHide();
+        wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        toast('Đã khôi phục bài quiz ở câu bạn đang làm.');
+        return;
+      }
+      const discard = event.target.closest('#yyDiscardQuiz');
+      if (discard) {
+        state.activeQuizDraft = null;
+        saveState();
+        YY3_renderQuizDraftResume();
+        toast('Đã xóa bài quiz đang làm dở.');
+        return;
+      }
+      if (event.target.closest('[data-qanswer]') || event.target.id === 'qNext') {
+        setTimeout(() => {
+          if (quizRun) YY3_captureQuizDraft();
+          else { state.activeQuizDraft = null; saveState(); YY3_renderQuizDraftResume(); }
+        }, 0);
+      }
+      if (event.target.id === 'qCancel') {
+        setTimeout(() => { state.activeQuizDraft = null; saveState(); YY3_renderQuizDraftResume(); }, 0);
+      }
+    });
+  }
+  function boxHide() { document.getElementById('yyQuizDraftResume')?.classList.add('hidden'); }
+
+  // Include placement history and quiz review links in the profile's recent-learning feed.
+  const YY3_priorLearningHistory = YY3_renderLearningHistory;
+  YY3_renderLearningHistory = function YY3_renderLearningHistoryWithArchiveActions() {
+    const el = document.getElementById('yyLearningHistory');
+    if (!el) return YY3_priorLearningHistory();
+    const events = [];
+    (state.placementHistory || []).forEach((x, i) => events.push({
+      kind: 'placement', index: i, type: 'Kiểm tra năng lực', title: `Sàng lọc HSK · ${x.pct}%`,
+      detail: `Đúng ${x.score}/${x.total} câu`, at: x.at
+    }));
+    (state.quizHistory || []).forEach((x, i) => events.push({
+      kind: 'quiz', index: i, type: x.kind || 'Quiz', title: `${x.score}/${x.total} · ${x.pct}%`,
+      detail: x.answerReview?.length ? `${x.answerReview.length} câu có lời giải` : 'Lịch sử điểm', at: x.date
+    }));
+    (state.lessonHistory || []).filter(x => !['placement','quiz'].includes(x.type)).forEach(x => events.push({
+      kind: 'lesson', type: x.title || 'Hoạt động học', title: x.detail || x.title || 'Đã học', detail: '', at: x.at || x.date
+    }));
+    (state.speakingSessions || []).forEach(x => events.push({ kind:'speaking', type:'Luyện giao tiếp', title:`${x.minutes || 0} phút · ${x.replyCount || 0} lượt trả lời`, detail:x.scenario || '', at:x.at }));
+    (state.writingAttempts || []).forEach(x => events.push({ kind:'writing', type:'Luyện viết', title:x.title || x.prompt || 'Bài viết', detail:`${x.hanzi || 0} chữ Hán`, at:x.at }));
+    events.sort((a,b) => (Date.parse(b.at || '') || 0) - (Date.parse(a.at || '') || 0));
+    el.innerHTML = events.length ? events.slice(0,30).map(x => {
+      const action = x.kind === 'placement' && state.placementHistory[x.index]?.answerDetails?.length ? `<button class="btn btn-outline btn-small" data-yy-open-placement="${x.index}">Xem kết quả</button>`
+        : x.kind === 'quiz' && state.quizHistory[x.index]?.answerReview?.length ? `<button class="btn btn-outline btn-small" data-yy-open-quiz="${x.index}">Xem đáp án</button>` : '';
+      return `<div class="history-item"><div><strong>${YY3_esc(x.type)}</strong><div class="tiny muted">${YY3_esc(x.title)}</div><div class="tiny muted">${YY3_esc(x.detail)}</div><div class="tiny muted">${YY3_esc(YY3_date(x.at))}</div></div>${action}</div>`;
+    }).join('') : '<div class="empty"><div class="big">🌱</div>Chưa có hoạt động nào được lưu. Sau bài test hoặc buổi học đầu tiên, lịch sử sẽ xuất hiện ở đây.</div>';
+  };
+
+  document.addEventListener('click', event => {
+    const pBtn = event.target.closest('[data-yy-open-placement]');
+    if (pBtn) {
+      const item = state.placementHistory[Number(pBtn.dataset.yyOpenPlacement)];
+      if (!item) return;
+      openModal(`<div class="modal-head"><div><span class="pill">SÀNG LỌC HSK 2.0</span><h2 style="margin-top:9px">Kết quả ${item.pct}% · ${item.score}/${item.total}</h2><p class="tiny muted">${YY3_esc(YY3_date(item.at))}</p></div><button class="modal-close" data-close>✕</button></div><div class="yy-answer-review"><h3>Xem lại từng câu</h3>${YY3_reviewDetails(item.answerDetails || [])}</div>`);
+      return;
+    }
+    const qBtn = event.target.closest('[data-yy-open-quiz]');
+    if (qBtn) {
+      const item = state.quizHistory[Number(qBtn.dataset.yyOpenQuiz)];
+      if (!item?.answerReview?.length) return;
+      openModal(`<div class="modal-head"><div><span class="pill">${YY3_esc(item.kind || 'QUIZ')}</span><h2 style="margin-top:9px">Kết quả ${item.pct}% · ${item.score}/${item.total}</h2><p class="tiny muted">${YY3_esc(YY3_date(item.date))}</p></div><button class="modal-close" data-close>✕</button></div><div class="yy-answer-review">${YY3_reviewDetails(item.answerReview)}</div>`);
+    }
+  });
+
+  YY3_renderQuizDraftResume();
+  YY3_renderLearningHistory();
+})();
+
 </script>
 </body>
 </html>
